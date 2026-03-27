@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, rgb(254, 149, 225), rgb(166, 193, 238));
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+.index-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.index-logo {
+  display: flex;
+  align-items: center;
+}
+
+.index-logo-img {
+  height: 150px;
+  margin-right: 150px;
+}
+
+.index-site-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-left: 300px;
+}
+
+.index-header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.index-search-box {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.index-search-box input {
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+/* Buttons */
+.index-btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.index-login {
+  background: white;
+  border: 1px solid #333;
+}
+
+.index-signup {
+  background: #ff6f91;
+  color: white;
+}
+
+/* Welcome */
+.index-welcome {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Main box center */
+.index-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.index-box {
+  background: #f1f1f1;
+  width: 80%;
+  max-width: 750px;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Sections */
+.index-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.index-section h2 {
+  color: #ff5c8a;
+  margin-bottom: 10px;
+}
+
+/* login-signup container */
+.signup-container {
+  background: white;
+  padding: 25px 35px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: left;
+  margin-top: 40px;
+  animation: dropIn 0.8s ease;
+}
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.signup-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.signup-container input,
+.signup-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.signup-container .btn5 {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #ff63ed;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.signup-container .btn5:hover {
+  background: #c848a6;
+  transform: scale(1.03);
+}
+
+.signup-container p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login {
+  background: white;
+  padding: 25px 35px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: left;
+  margin-top: 40px;
+  animation: dropIn 0.8s ease;
+}
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+.login h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.login .btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #f76ecc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login .btn:hover {
+  background: #c8488c;
+  transform: scale(1.03);
+}
+
+.login p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.auth-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+
+.auth-logo {
+  height: 150px;
+  width: 150px;
+}
+.auth-header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* home page */
+.home-title {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.home-main-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto 40px auto;
+}
+
+.home-pet-box {
+  width: 250px;
+  height: 500px;
+  background: rgb(245, 182, 226);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.home-pet-box:hover {
+  transform: translateY(-5px);
+}
+
+.home-pet-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.home-info-box {
+  padding: 15px;
+  text-align: left;
+}
+
+.home-info-box p {
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+  font-size: 17px;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 50px;
+  background: #ff6eff;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.home-btn:hover {
+  background: #ac3396;
+}
+/* adopt page */
+.adopt-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.adopt-container {
+  background: rgb(250, 250, 250);
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 500px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);
+   }
+
+  to { opacity: 1; transform: translateY(0);
+   }
+}
+
+.adopt-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.adopt-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.adopt-container label {
+  font-weight: bold;
+  color: #333;
+}
+
+.adopt-container input,
+.adopt-container select,
+.adopt-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.adopt-btn {
+  display: block;
+  width: 50%;
+  margin-left: 80px;
+  padding: 12px;
+  background: #f569e7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.adopt-container .adopt-btn:hover {
+  background: #c13aa3;
+  transform: scale(1.03);
+}
+
+/* Header */
